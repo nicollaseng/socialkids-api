@@ -56,7 +56,7 @@
     "sinon": "^4.1.2"
   },
   "scripts": {
-    "db:migrate": "cd ./src/domain/ && sequelize db:migrate",
+    "db:migrate": "cd ./src/domain/ && ../../node_modules/.bin/sequelize db:migrate",
     "db:migrate:undo": "cd ./src/domain/ && sequelize db:migrate:undo",
     "db:migrate:local": "cd ./src/domain/ && sequelize db:migrate --url postgres://postgres:smartsindico@localhost/smartsindico",
     "db:migrate:local:undo": "cd ./src/domain/ && sequelize db:migrate:undo --url postgres://postgres:smartsindico@localhost/smartsindico",
