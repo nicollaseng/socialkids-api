@@ -1,0 +1,362 @@
+<html>
+	<head>
+		<style>
+			#boxbody {
+				font-size: 12px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			#box {
+				width: 96%;
+				margin-left: 2%;
+				/* margin-top: 6px; */
+			}
+
+			#toprow {
+				margin-top: 8px;
+			}
+
+			#logo {
+				width: 18%;
+				float:left;
+			}
+
+			#innerlogo {
+				width: 100%;
+			}
+			
+			#img {
+				width: 100%;
+			}
+
+			#info {
+				float: right;
+				width:81%;
+				margin-right: 3px;
+			}
+
+			#innerInfo {
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-bottom: 8px;
+			}
+
+			#titleinfo {
+				text-align: center;
+				padding-top: 5px;
+				padding-bottom: 8px;
+			}
+			#topbar {
+				height: 17px;
+				line-height: 17px;
+			}
+			#downbar {
+				height: 24px;
+				line-height: 24px;
+			}
+			#history {
+				/* height: 100%; */
+				margin-top: 4px;
+				padding-left: 3px;
+				padding-right: 3px;
+			}
+			
+      .listMargin {
+				height: 20px;
+			}
+
+      .marginBetween {
+        height: 6px;
+      }
+
+      .downMargin {
+        height: 10px;
+      }
+
+			/* #itemlist {
+				width: 69%;
+				padding-top: 12px;
+				margin-left: -1px;
+			} */
+
+			/* #pricelist {
+				width: 30%;
+				padding-top: 12px;
+			} */
+
+			#totalprice {
+				text-align: right;
+			}
+
+			#sign {
+				padding: 10px;
+				padding-left: 20px;
+				padding-bottom: 4px;
+			}
+
+			#warn {
+				margin-top:4px;
+			}
+
+			#sindname {
+				width:250px;
+				margin-top: 7px;
+				margin-left:58.55px;
+			}
+
+			#valueLbl {
+				width: 27%;
+			}
+
+			#cutseparator {
+				margin-top: 35px;
+				margin-bottom: 25px;
+				border-style: dashed;
+				border-width: 1px;
+				border-color: black;
+			}
+
+			.row {
+				display: table;
+				width: 100%;
+			}
+			.border {
+				border-style: solid;
+				border-width: 1px;
+				border-color: grey;
+				border-radius: 4px;
+			}
+			.greybar { background-color: #dcd5d5; }
+			.bold {font-weight: bold;}
+			.light {font-weight: normal;}
+			.fss {font-size: 12px;}
+			.fsxs {font-size: 12px;}
+      .fb {font-size: 14px;}
+      .fbs {font-size: 13px;}
+			.textL3 {
+				width: 30%;
+				text-align: left;
+			}
+			.textL5 {
+				width: 50%;
+				text-align: left;
+			}
+			.textL6 {
+				width: 60%;
+				text-align: left;
+			}
+			.textL7 {
+				width: 70%;
+				text-align: left;
+			}
+			.textL8 {
+				width: 80%;
+				text-align: left;
+			}
+			.textR2 {
+				width: 20%;
+				text-align: right;
+			}
+			.textR3 {
+				width: 30%;
+				text-align: right;
+			}
+			.textR4 {
+				width: 40%;
+				text-align: right;
+			}
+			.textR5 {
+				width: 50%;
+				text-align: right;
+			}
+			.textR7 {
+				width: 69%;
+				text-align: right;
+			}
+			.textC3 {
+				width: 30%;
+				text-align: center;
+			}
+      .textC3Item {
+				width: 30%;
+				text-align: right;
+			}
+			.textC7 {
+				width: 69%;
+				text-align: center;
+			}
+      .textC7Item {
+				width: 69%;
+        /* padding-left: 10px;  */
+				text-align: left;
+			}
+			.vSeparator {
+				width: 1px;
+				height: 100%;
+				/* padding-top: 2px; */
+				/* padding-bottom: 2px; */
+				background-color: grey;
+			}
+      .marginSeparator {
+        margin-left: 69%;
+      }
+			.mariginInfo {
+				margin-bottom: 3px;
+			}
+      .marginItemTitle {
+        margin-bottom: 10px;
+      }
+			.marginItem {
+				margin-bottom: 3px;
+			}
+      .listLine {
+        height: 17px;
+      }
+      .listLineTotal {
+        height: 25px;
+      }
+      .listTitle {
+        height: 23px;
+      }
+      .listBigTitle {
+        height: 27px;
+      }
+      .itemBigTitle {
+				padding-left: 8px;
+        margin-bottom: 4px;
+        font-size: 16px;
+			}
+      .itemTitle {
+				padding-left: 18px;
+        margin-bottom: 4px;
+        font-size: 14px;
+			}
+      .itemTitleMargin {
+				height: 6px;
+			}
+
+      .itemBigTitleMargin {
+				height: 12px;
+			}
+			.item {
+				padding-left: 30px;
+			}
+			.price {
+				padding-right: 20px;
+			}
+			.floatR{
+				float: right;
+			}
+			.floatL{
+				float: left;
+			}
+			.line {
+				border-color: grey;
+				border-style: solid;
+				border-width: 0px;
+				border-bottom-width: 1px;
+			}
+			.signLine {
+				width:250px;
+				margin-left: 3px;
+				margin-right: 3px;
+				margin-top: 13px;
+				border-color:black!important;
+			}
+			.dateLine {
+				width:37px;
+				margin-top: 13px;
+				border-color:black!important;
+			}
+			.left3 {margin-left:3px;}
+			.smallfont{ font-size: 10px; }
+		</style>
+	</head>
+
+	<body id="boxbody">
+		<div id="box">
+			<div class="border">
+				<div id="toprow" class="row">
+					<div id="logo" align="center">
+						<div id="innerlogo"><img id="img" src="__logo__"></div>
+					</div>
+					<div id="info" class="border">
+						<div id="innerInfo">
+							<div id="titleinfo" class="row bold">
+								<div>Prestação de Contas Condominial - __ref__</div>
+							</div>
+							<div class="row">
+								<div class="bold textL7 floatL fss">
+									Condomínio:
+									<font class="light fsxs"> __predio__</font>
+								</div>
+							</div>
+							<div class="row">
+								<div class="bold floatL fss">
+									Endereço:
+									<font class="light fsxs"> __end__</font>
+								</div>
+							</div>
+						</div>
+					</div>
+        </div>
+				<section id="history">
+					<div id="topbar" class="border greybar">
+						<div class="floatL textC7 bold">Lançamento</div>
+						<div class="floatL vSeparator"></div>
+						<div class="floatL textC3 bold" style="margin-left:3px">Valor</div>
+          </div>
+          <div class="listMargin">
+            <div class="floatL vSeparator marginSeparator"></div>
+          </div>
+          <div>
+            __ordinaria__
+            <div class="marginBetween">
+              <div class="floatL vSeparator marginSeparator"></div>
+            </div>
+            __extraordinaria__
+            <div class="marginBetween">
+              <div class="floatL vSeparator marginSeparator"></div>
+            </div>
+            __reserva__
+            <!-- <div class="listTitle">
+              <div class="floatL textC7Item"><a class="itemTitle bold">Histórico</a></div>
+              <div class="floatL vSeparator"></div>
+              <div class="floatL textC3Item" style="margin-left:3px"><a class="price fb bold">Valorzao</a></div>
+            </div> -->
+            <!-- <div class="listBigTitle">
+              <div class="floatL textC7Item"><a class="itemBigTitle bold">Histórico</a></div>
+              <div class="floatL vSeparator"></div>
+            </div>
+            <div class="listTitle">
+              <div class="floatL textC7Item"><a class="itemTitle bold">Histórico</a></div>
+              <div class="floatL vSeparator"></div>
+            </div>
+            <div class="listLine">
+              <div class="floatL textC7Item"><a class="item">Histórico</a></div>
+              <div class="floatL vSeparator"></div>
+              <div class="floatL textC3Item" style="margin-left:3px"><a class="price">Valor</a></div>
+            </div>
+            <div class="listLine">
+              <div class="floatL textC7Item"><a class="item">Histórico</a></div>
+              <div class="floatL vSeparator"></div>
+              <div class="floatL textC3Item" style="margin-left:3px"><a class="price">Valor</a></div>
+            </div>
+            <div class="listLine">
+              <div class="floatL textC7Item"><a class="item">Histórico</a></div>
+              <div class="floatL vSeparator"></div>
+              <div class="floatL textC3Item" style="margin-left:3px"><a class="price">Valor</a></div>
+            </div>-->
+          </div>
+          <div class="downMargin">
+            <div class="floatL vSeparator marginSeparator"></div>
+          </div>
+				</section>
+			</div>
+			<div>
+				<div class="textL5 floatL smallfont"><div style="padding-left: 10px;">www.SmartSindico.com.br</div></div>
+				<div class="textR5 floatL smallfont"><div style="padding-right: 10px;">Emitido em __dataemissao__</div></div>
+			</div>
+		</div>
+	</body>
+</html>

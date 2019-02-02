@@ -1,0 +1,23 @@
+/node_modules
+/.nyc_output
+/recibos
+/perfil
+/registroagua
+/emailprestacao
+.DS_Store
+src/services/recibo/reciboConfig.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logfile
+sqlreciboupdate
+/src/domain/config
+
+*.env
+
+package-lock.json
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

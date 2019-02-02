@@ -1,0 +1,438 @@
+<html>
+	<head>
+		<style>
+			#boxbody {
+				font-size: 12px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			#box {
+				width: 96%;
+				margin-left: 2%;
+				/* margin-top: 6px; */
+			}
+
+			#toprow {
+				margin-top: 8px;
+			}
+
+			#logo {
+				width: 18%;
+				float:left;
+			}
+
+			#innerlogo {
+				width: 100%;
+			}
+			
+			#img {
+				width: 100%;
+			}
+
+			#info {
+				float: right;
+				width:81%;
+				margin-right: 3px;
+			}
+
+			#innerInfo {
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-bottom: 8px;
+			}
+
+			#titleinfo {
+				text-align: center;
+				padding-top: 5px;
+				padding-bottom: 8px;
+			}
+
+			#topbar {
+				height: 17px;
+				line-height: 17px;
+			}
+			#downbar {
+				height: 24px;
+				line-height: 24px;
+			}
+			#history {
+				height: 187px;
+				margin-top: 4px;
+				padding-left: 3px;
+				padding-right: 3px;
+			}
+			#list {
+				height: 137px;
+				/* padding-left: 1px; */
+			}
+
+			#itemlist {
+				width: 69%;
+				padding-top: 12px;
+				margin-left: -1px;
+			}
+
+			#pricelist {
+				width: 30%;
+				padding-top: 12px;
+			}
+
+			#totalprice {
+				text-align: right;
+			}
+
+			#sign {
+				padding: 10px;
+				padding-left: 20px;
+				padding-bottom: 4px;
+			}
+
+			#warn {
+				margin-top:4px;
+			}
+
+			#sindname {
+				width:250px;
+				margin-top: 7px;
+				margin-left:58.55px;
+			}
+
+			#valueLbl {
+				width: 27%;
+			}
+
+			#cutseparator {
+				margin-top: 35px;
+				margin-bottom: 25px;
+				border-style: dashed;
+				border-width: 1px;
+				border-color: black;
+			}
+
+			.row {
+				display: table;
+				width: 100%;
+			}
+			.border {
+				border-style: solid;
+				border-width: 1px;
+				border-color: grey;
+				border-radius: 4px;
+			}
+			.greybar { background-color: #dcd5d5; }
+			.bold {font-weight: bold;}
+			.light {font-weight: normal;}
+			.fss {font-size: 12px;}
+			.fsxs {font-size: 12px;}
+			.textL3 {
+				width: 30%;
+				text-align: left;
+			}
+			.textL5 {
+				width: 50%;
+				text-align: left;
+			}
+			.textL6 {
+				width: 60%;
+				text-align: left;
+			}
+			.textL7 {
+				width: 70%;
+				text-align: left;
+			}
+			.textL8 {
+				width: 80%;
+				text-align: left;
+			}
+			.textR2 {
+				width: 20%;
+				text-align: right;
+			}
+			.textR3 {
+				width: 30%;
+				text-align: right;
+			}
+			.textR4 {
+				width: 40%;
+				text-align: right;
+			}
+			.textR5 {
+				width: 50%;
+				text-align: right;
+			}
+			.textR7 {
+				width: 69%;
+				text-align: right;
+			}
+			.textC3 {
+				width: 30%;
+				text-align: center;
+			}
+			.textC7 {
+				width: 69%;
+				text-align: center;
+			}
+			.vSeparator {
+				width: 1px;
+				height:100%;
+				/* padding-top: 2px; */
+				/* padding-bottom: 2px; */
+				background-color: grey;
+			}
+			.mariginInfo {
+				margin-bottom: 3px;
+			}
+			.marginItem {
+				margin-bottom: 3px;
+			}
+			.item {
+				padding-left: 20px;
+			}
+			.price {
+				padding-right: 20px;
+			}
+			.floatR{
+				float: right;
+			}
+			.floatL{
+				float: left;
+			}
+			.line {
+				border-color: grey;
+				border-style: solid;
+				border-width: 0px;
+				border-bottom-width: 1px;
+			}
+			.signLine {
+				width:250px;
+				margin-left: 3px;
+				margin-right: 3px;
+				margin-top: 13px;
+				border-color:black!important;
+			}
+			.dateLine {
+				width:37px;
+				margin-top: 13px;
+				border-color:black!important;
+			}
+			.left3 {margin-left:3px;}
+			.smallfont{ font-size: 10px; }
+		</style>
+	</head>
+
+	<body id="boxbody">
+		<div id="box">
+			<div class="border">
+				<div id="toprow" class="row">
+					<div id="logo" align="center">
+						<div id="innerlogo"><img id="img" src="__logo__"></div>
+					</div>
+					<div id="info" class="border">
+						<div id="innerInfo">
+							<div id="titleinfo" class="row bold">
+								<div>Recibo de Condomínio - __ref__</div>
+								<div>1ª via - Morador</div>
+							</div>
+							<div class="row">
+								<div class="bold textL7 floatL fss">
+									Condomínio:
+									<font class="light fsxs"> __predio__</font>
+								</div>
+								<div class="bold textR3 floatL fss">
+									Bloco:
+									<font class="light fsxs"> __bloco__</font>
+								</div>
+							</div>
+							<div class="row">
+								<div class="bold textL7 floatL fss">
+									Unidade:
+									<font class="light fsxs"> __unid__</font>
+								</div>
+								<div class="bold textR3 floatL fss">
+									Recibo: 
+									<font class="light fsxs"> __recibo__</font>
+								</div>
+							</div>
+							<div class="row">
+								<div class="bold floatL fss">
+									Endereço:
+									<font class="light fsxs"> __end__</font>
+								</div>
+								<!-- <div class="bold textR2 floatL fss" style="width:28%">1ª via - Morador</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="history">
+					<div id="topbar" class="border greybar">
+						<div class="floatL textC7 bold"><font>Histórico</font></div>
+						<div class="floatL vSeparator"></div>
+						<div class="floatL textC3 bold" style="margin-left:3px"><font>Valor</font></div>
+					</div>
+					<div id="list">
+						<div id="itemlist" class="floatL">
+							<div class="marginItem item">__item1__</div>
+							<div class="marginItem item">__item2__</div>
+                            <div class="marginItem item">__item3__</div>
+                            <div class="marginItem item">__item4__</div>
+                            <div class="marginItem item">__item5__</div>
+                            <div class="marginItem item">__item6__</div>
+                            <div class="item">__item7__</div>
+							<!-- <div class="item"><font>Conta de Água</font></div> -->
+						</div>
+						<div class="vSeparator floatL"></div>
+						<div id="pricelist" class="floatL">
+							<div align="right" class="marginItem price">__price1__</div>
+							<div align="right" class="marginItem price">__price2__</div>
+                            <div align="right" class="marginItem price">__price3__</div>
+                            <div align="right" class="marginItem price">__price4__</div>
+                            <div align="right" class="marginItem price">__price5__</div>
+                            <div align="right" class="marginItem price">__price6__</div>
+                            <div align="right" class="price">__price7__</div>
+							<!-- <div align="right" class="price"><font>0,00</font></div> -->
+						</div>
+					</div>
+					<div id="downbar" class="border greybar">
+						<div class="floatL textC7 bold">
+							<font>Total</font>
+						</div>
+						<div class="floatL vSeparator"></div>
+						<div class="floatL textR3 bold">
+							<font id="totalprice" class="price">__totalprice__</font>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="line"></div> -->
+			</div>
+			<div id="sign">
+				<div class="row">
+					<div class="floatL">Recebido:</div>
+					<div class="floatL line signLine"></div>
+					<div class="floatL">em</div>
+					<div class="floatL line dateLine left3"></div>
+					<div class="floatL">/</div>
+					<div class="floatL line dateLine"></div>
+					<div class="floatL">/</div>
+					<div class="floatL line dateLine"></div>
+				</div>
+				<div id="sindname" align="center">
+					__sindico__
+				</div>
+				<div id="warn">
+					Válido somente com a assinatura do síndico. Este recibo não quita débitos anteriores.
+				</div>
+			</div>
+			<div>
+				<div class="textL5 floatL smallfont"><div style="padding-left: 10px;">www.SmartSindico.com.br</div></div>
+				<div class="textR5 floatL smallfont"><div style="padding-right: 10px;">Emitido em __dataemissao__</div></div>
+			</div>
+		</div>
+		<div id="cutseparator"></div>
+		<div id="box" style="margin-top:0px;" >
+			<div class="border">
+				<div id="toprow" class="row">
+					<div id="logo" align="center">
+						<div id="innerlogo"><img id="img" src="__logo__"></div>
+					</div>
+					<div id="info" class="border">
+						<div id="innerInfo">
+							<div id="titleinfo" class="row bold">
+								<div>Recibo de Condomínio - __ref__</div>
+								<div>2ª via - Condomínio</div>
+							</div>
+							<div class="row">
+								<div class="bold textL7 floatL fss">
+									Condomínio:
+									<font class="light fsxs"> __predio__</font>
+								</div>
+								<div class="bold textR3 floatL fss">
+									Bloco:
+									<font class="light fsxs"> __bloco__</font>
+								</div>
+							</div>
+							<div class="row">
+								<div class="bold textL7 floatL fss">
+									Unidade:
+									<font class="light fsxs"> __unid__</font>
+								</div>
+								<div class="bold textR3 floatL fss">
+									Recibo: 
+									<font class="light fsxs"> __recibo__</font>
+								</div>
+							</div>
+							<div class="row">
+								<div class="bold floatL fss">
+									Endereço:
+									<font class="light fsxs"> __end__</font>
+								</div>
+								<!-- <div class="bold textR3 floatL fss">2ª via - Condomínio</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="history">
+					<div id="topbar" class="border greybar">
+						<div class="floatL textC7 bold"><font>Histórico</font></div>
+						<div class="floatL vSeparator"></div>
+						<div class="floatL textC3 bold" style="margin-left:3px"><font>Valor</font></div>
+					</div>
+					<div id="list">
+						<div id="itemlist" class="floatL">
+                            <div class="marginItem item">__item1__</div>
+                            <div class="marginItem item">__item2__</div>
+                            <div class="marginItem item">__item3__</div>
+                            <div class="marginItem item">__item4__</div>
+                            <div class="marginItem item">__item5__</div>
+                            <div class="marginItem item">__item6__</div>
+                            <div class="item">__item7__</div>
+							<!-- <div class="item"><font>Conta de Água</font></div> -->
+						</div>
+						<div class="vSeparator floatL"></div>
+						<div id="pricelist" class="floatL">
+                            <div align="right" class="marginItem price">__price1__</div>
+                            <div align="right" class="marginItem price">__price2__</div>
+                            <div align="right" class="marginItem price">__price3__</div>
+                            <div align="right" class="marginItem price">__price4__</div>
+                            <div align="right" class="marginItem price">__price5__</div>
+                            <div align="right" class="marginItem price">__price6__</div>
+                            <div align="right" class="price">__price7__</div>
+							<!-- <div align="right" class="price"><font>0,00</font></div> -->
+						</div>
+					</div>
+					<div id="downbar" class="border greybar">
+						<div class="floatL textC7 bold">
+							<font>Total</font>
+						</div>
+						<div class="floatL vSeparator"></div>
+						<div class="floatL textR3 bold">
+							<font id="totalprice" class="price">__totalprice__</font>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="line"></div> -->
+			</div>
+			<div id="sign">
+				<div class="row">
+					<div class="floatL">Recebido:</div>
+					<div class="floatL line signLine"></div>
+					<div class="floatL">em</div>
+					<div class="floatL line dateLine left3"></div>
+					<div class="floatL">/</div>
+					<div class="floatL line dateLine"></div>
+					<div class="floatL">/</div>
+					<div class="floatL line dateLine"></div>
+				</div>
+				<div id="sindname" align="center">
+					__sindico__
+				</div>
+				<div id="warn">
+					Válido somente com a assinatura do síndico. Este recibo não quita débitos anteriores.
+				</div>
+			</div>
+			<div>
+				<div class="textL5 floatL smallfont"><div style="padding-left: 10px;">www.SmartSindico.com.br</div></div>
+				<div class="textR5 floatL smallfont"><div style="padding-right: 10px;">Emitido em __dataemissao__</div></div>
+			</div>
+		</div>
+	</body>
+</html>
